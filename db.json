@@ -1,0 +1,32 @@
+{
+  "veiculos": [
+    {
+      "marca": "fiat",
+      "modelo": "pulse",
+      "ano": 2026,
+      "cor": "prata",
+      "placa": "iuo1234",
+      "disponivel": true,
+      "id": "qH_6tam_5Pk"
+    },
+    {
+      "marca": "fiat",
+      "modelo": "strada",
+      "ano": 2026,
+      "cor": "azul",
+      "placa": "safj898",
+      "disponivel": true,
+      "id": "WAX2F_vxqf0"
+    },
+    {
+      "marca": "s",
+      "modelo": "asdasdas",
+      "ano": 2026,
+      "cor": "12eqds",
+      "placa": "qwe",
+      "disponivel": false,
+      "id": "C3TrAcPlaq0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

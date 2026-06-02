@@ -1,0 +1,50 @@
+<h2>Cadastrar Veículo</h2>
+
+<form (ngSubmit)="salvar()" #form="ngForm">
+
+  <input
+    name="marca"
+    [(ngModel)]="veiculo.marca"
+    placeholder="Marca"
+    required>
+
+  <input
+    name="modelo"
+    [(ngModel)]="veiculo.modelo"
+    placeholder="Modelo"
+    required>
+
+  <input
+    type="number"
+    name="ano"
+    [(ngModel)]="veiculo.ano"
+    placeholder="Ano"
+    required>
+
+  <input
+    name="cor"
+    [(ngModel)]="veiculo.cor"
+    placeholder="Cor"
+    required>
+
+  <input
+    name="placa"
+    [(ngModel)]="veiculo.placa"
+    placeholder="Placa"
+    required>
+
+  <label>
+    <input
+      type="checkbox"
+      name="disponivel"
+      [(ngModel)]="veiculo.disponivel">
+    Disponível
+  </label>
+
+  <br><br>
+
+  <button type="submit" [disabled]="form.invalid">
+    Salvar
+  </button>
+
+</form>
