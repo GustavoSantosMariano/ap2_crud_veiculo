@@ -1,0 +1,57 @@
+<h2>Veículos Cadastrados</h2>
+
+@if (carregando) {
+  <p>Carregando veículos...</p>
+}
+
+@if (!carregando && veiculos.length === 0) {
+  <p>Nenhum veículo cadastrado.</p>
+}
+
+@if (!carregando && veiculos.length > 0) {
+
+<table>
+
+  <thead>
+    <tr>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Ano</th>
+      <th>Cor</th>
+      <th>Placa</th>
+      <th>Disponível</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    @for (veiculo of veiculos; track veiculo.id) {
+
+      <tr>
+        <td>{{ veiculo.marca }}</td>
+        <td>{{ veiculo.modelo }}</td>
+        <td>{{ veiculo.ano }}</td>
+        <td>{{ veiculo.cor }}</td>
+        <td>{{ veiculo.placa }}</td>
+        <td>
+          {{ veiculo.disponivel ? 'Sim' : 'Não' }}
+        </td>
+        <td>
+          <button (click)="editar(veiculo)">
+            Editar
+          </button>
+
+          <button (click)="excluir(veiculo)">
+            Excluir
+          </button>
+        </td>
+      </tr>
+
+    }
+
+  </tbody>
+
+</table>
+
+}
