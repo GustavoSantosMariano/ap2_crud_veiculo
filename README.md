@@ -1,60 +1,75 @@
-# Ap2CrudVeiculos
+# AP2 - Aplicações Front-End
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+## Identificação
 
-## Development server
+Nome: Gustavo dos Santos Mariano  
+Curso: Análise e Desenvolvimento de Sistemas  
+Disciplina: Aplicações Front-End  
+Instituição: ULBRA  
 
-To start a local development server, run:
+## Tema do projeto
 
-```bash
-ng serve
-```
+CRUD de veiculos com Angular e JSON Server.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Descrição
 
-## Code scaffolding
+Aplicação desenvolvida em Angular para cadastro, listagem, edição e exclusão de veiculos, utilizando JSON Server como API simulada.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Tecnologias utilizadas
 
-```bash
-ng generate component component-name
-```
+- Angular
+- TypeScript
+- HTML
+- CSS
+- JSON Server
+- Git e GitHub
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Como executar o projeto
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+1. Clone o repositório:
 
 ```bash
-ng build
+git clone https://github.com/usuario/ap2_crud_veiculo
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+2. Acesse a pasta do projeto:
 
 ```bash
-ng test
+cd ap2_crud_veiculo
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+3. Instale as dependências:
 
 ```bash
-ng e2e
+npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+4. Execute a API fake:
 
-## Additional Resources
+```bash
+npm run api
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# ap2_crud_veiculo
+5. Em outro terminal, execute o Angular:
+
+```bash
+npm start
+```
+
+6. Acesse no navegador:
+
+```txt
+http://localhost:4200
+```
+
+## Link do vídeo demonstrativo
+
+Deu ruim
+
+## Funcionalidades
+
+- Cadastro de registros
+- Listagem de registros
+- Edição de registros
+- Exclusão de registros
+- Integração com JSON Server
